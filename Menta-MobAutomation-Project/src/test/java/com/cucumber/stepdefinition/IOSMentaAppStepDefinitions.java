@@ -32,7 +32,7 @@ public class IOSMentaAppStepDefinitions
 			 String vDeviceID = Constants.CONFIG.getProperty("bIOSDevice");
 		        LogCapture.info("Menta Application is launching on  device "+vDeviceID+"....");
 		        //System.out.println(vBrowserName);
-		        Constants.JenkinsBrowser= (Objects.equals(Constants.JenkinsBrowser, "null")) ? "" : "";
+		        
 		        try {
 		            if (!Constants.JenkinsBrowser.isEmpty() || !Constants.JenkinsBrowser.equals("")) {
 		            	vDeviceID = Constants.JenkinsBrowser;
@@ -46,7 +46,6 @@ public class IOSMentaAppStepDefinitions
 		        String vVersion = Constants.CONFIG.getProperty("bIOSVersion");
 		        LogCapture.info("Menta Application is launching on  device version "+vVersion+"....");
 		        //System.out.println(vBrowserName);
-		        Constants.BrowserStack= (Objects.equals(Constants.BrowserStack, "null")) ? "" : "";
 		        try {
 		            if (!Constants.BrowserStack.isEmpty() || !Constants.BrowserStack.equals("")) {
 		            	vVersion = Constants.BrowserStack;
