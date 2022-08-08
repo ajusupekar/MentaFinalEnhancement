@@ -72,7 +72,7 @@ public class ANDROIDMentaAppStepDefinition
 			 String vDeviceID = Constants.CONFIG.getProperty("bDevice");
 		        LogCapture.info("Menta Application is launching on  device "+vDeviceID+"....");
 		        //System.out.println(vBrowserName);
-		        Constants.JenkinsBrowser= (Objects.equals(Constants.JenkinsBrowser, "null")) ? "" : "";
+		        //Constants.JenkinsBrowser= (Objects.equals(Constants.JenkinsBrowser, "null")) ? "" : "";
 		        try {
 		            if (!Constants.JenkinsBrowser.isEmpty() || !Constants.JenkinsBrowser.equals("")) {
 		            	vDeviceID = Constants.JenkinsBrowser;
